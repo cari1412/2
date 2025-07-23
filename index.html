@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProspectTrade - Transform Your Life with Professional Crypto Trading Signals</title>
+    <style>
+        /* Global Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+
+        /* Container for responsive design */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00d4ff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #00d4ff, #ff6b35);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Placeholder for when you add your logo image */
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23ffffff" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            background: linear-gradient(45deg, #00d4ff, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero h2 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #f0f0f0;
+            font-weight: 300;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0,212,255,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #00d4ff;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #cccccc;
+            margin-top: 5px;
+        }
+
+        /* CTA Button Styles */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            box-shadow: 0 10px 30px rgba(255,107,53,0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255,107,53,0.6);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+            color: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .profile-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(0,212,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #00d4ff, #ff6b35);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .story-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        .story-text h3 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+            color: white;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #00d4ff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(0,212,255,0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,212,255,0.2);
+        }
+
+        .service-icon {
+            margin-bottom: 20px;
+        }
+
+        .service-icon svg {
+            filter: drop-shadow(0 5px 15px rgba(0,212,255,0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-icon svg {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-card h3 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .service-card p {
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff6b35;
+            margin: 20px 0;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+            color: white;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #00d4ff;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(0,212,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+            font-size: 1.1em;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #00d4ff;
+        }
+
+        .testimonial-profit {
+            color: #ff6b35;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #00d4ff;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0,212,255,0.2);
+        }
+
+        .contact-icon {
+            font-size: 1.5em;
+            color: #00d4ff;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a2e;
+            color: #666;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .hero h2 {
+                font-size: 1.4em;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Urgency Elements */
+        .urgency-banner {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .urgency-banner:hover {
+            transform: scale(1.02);
+        }
+
+        .urgency-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .limited-time {
+            background: rgba(255,107,53,0.1);
+            border: 1px solid #ff6b35;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .limited-time h4 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .bonus-instructions {
+            background: rgba(0,212,255,0.1);
+            border: 1px solid #00d4ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .bonus-instructions h4 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .bonus-instructions p {
+            color: #e0e0e0;
+            margin-bottom: 10px;
+        }
+
+        .bonus-instructions .highlight-text {
+            color: #ff6b35;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Urgency Banner -->
+    <div class="urgency-banner" onclick="redirectWithDiscount()">
+        ⚡ LIMITED TIME: Get 30% OFF Your First Month - Only 48 Hours Left! ⚡
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <!-- Replace the div below with <img src="your-logo.png" alt="ProspectTrade Logo"> when you have your logo -->
+                <img src="logo.jpg" alt="ProspectTrade Logo">
+                <span>ProspectTrade</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>From $120 to $5,800 Monthly</h1>
+                <h2>9-to-5? I ditched that life for crypto signals — best decision ever.</h2>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">87%</span>
+                        <span class="stat-label">Win Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Active Traders</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$35K+</span>
+                        <span class="stat-label">Total Profits</span>
+                    </div>
+                </div>
+
+                <div class="limited-time">
+                    <h4>🎯 SPECIAL LAUNCH OFFER</h4>
+                    <p>First 50 members get 30% OFF their first subscription</p>
+                </div>
+
+                <div class="bonus-instructions">
+                    <h4>💰 HOW TO GET YOUR DISCOUNT</h4>
+                    <p>When selecting your plan and completing registration, your <span class="highlight-text">30% discount</span> will be automatically applied.</p>
+                    <p>You will receive the discount immediately upon checkout!</p>
+                </div>
+
+                <a href="#" onclick="redirectWithDiscount()" class="cta-button">Start Making Money Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-card fade-in">
+                    <div class="profile-image">PT</div>
+                    <h3>Emeka Johnson</h3>
+                    <p><strong>Age:</strong> 35</p>
+                    <p><strong>Location:</strong> Nairobi, Kenya</p>
+                    <p><strong>Experience:</strong> 8 Years Trading</p>
+                    <p><strong>Specialty:</strong> Futures & Spot Trading</p>
+                </div>
+                <div class="story-text fade-in">
+                    <h3>My Story: From Struggling to Thriving</h3>
+                    <p>Brother, let me be real with you. Three years ago, I was just like you — working a regular job in Nairobi, earning around $150 a month, and wondering how I’d ever build the life I dreamed of for my family.</p>
+                    
+                    <p>I tried everything — side hustles, forex (lost money), even considered moving abroad. Nothing worked… until I discovered professional crypto trading.</p>
+                    
+                    <p>In my first month, I turned $120 into a <span class="highlight">$420 profit</span> By month six, I was making more from trading than my full-time salary. By month twelve, I resigned.</p>
+                    
+                    <p>Today, I earn over <span class="highlight">$5,800 monthly</span> I work from home, spend quality time with my family, and finally live life on my own terms.
+                    But the best part? I now help other Kenyans like you do the same.</p>
+                    
+                    <p>This isn’t about luck or being special. It’s about getting the right crypto signals, learning solid risk management, and having someone who’s walked your path to guide you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>What You Get with ProspectTrade</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M3 3v18h18V3H3zm16 16H5V5h14v14z" fill="url(#iconGradient)"/>
+                            <path d="M8 17l1.5-1.5L7 13l2.5-2.5L8 9l-4 4 4 4zm8 0l4-4-4-4-1.5 1.5L17 13l-2.5 2.5L16 17z" fill="url(#iconGradient)"/>
+                            <circle cx="12" cy="13" r="1" fill="url(#iconGradient)"/>
+                            <circle cx="12" cy="9" r="1" fill="url(#iconGradient)"/>
+                            <circle cx="12" cy="17" r="1" fill="url(#iconGradient)"/>
+                        </svg>
+                    </div>
+                    <h3>Premium Trading</h3>
+                    <p>Get high-probability signals for both futures and spot trading. Each signal includes entry point, stop loss, and take profit levels. Number of signals depends on your chosen plan.</p>
+                    <p><strong>Includes:</strong> Risk management, market analysis, professional support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What My Students Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-text">
+                        "I was skeptical at first, but Emeka's signals are incredibly accurate. In 3 months, I've made $1,900 profit from $480 capital. Now I'm planning to quit my banking job!"
+                    </div>
+                    <div class="testimonial-author">- Adebayo O., Nairobi</div>
+                    <div class="testimonial-profit">Profit: $1,500 in 3 months</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-text">
+                        "The mentorship program changed my life. I went from losing money to making $720 monthly. Emeka doesn't just give signals, he teaches you to think like a professional trader."
+                    </div>
+                    <div class="testimonial-author">- Chioma N., Mombasa</div>
+                    <div class="testimonial-profit">Monthly Income: $720</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-text">
+                        "I started with just $70 and following Emeka's signals religiously. Six months later, I've grown my account to $1,080. The signals have 85%+ accuracy!"
+                    </div>
+                    <div class="testimonial-author">- Kemi A., Eldoret</div>
+                    <div class="testimonial-profit">Account Growth: 300% in 6 months</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Ready to Change Your Life?</h2>
+            <p>Don't let another month pass by struggling with your finances. Join hundreds of Nigerians who are already making serious money with crypto trading.</p>
+            
+            <div class="limited-time">
+                <h4>🎯 SPECIAL LAUNCH OFFER</h4>
+                <p>First 50 members get 30% OFF their first subscription</p>
+            </div>
+
+            <div class="bonus-instructions">
+                <h4>💰 HOW TO GET YOUR DISCOUNT</h4>
+                <p>When selecting your plan and completing registration, your <span class="highlight-text">30% discount</span> will be automatically applied.</p>
+                <p>You will receive the discount immediately upon checkout!</p>
+            </div>
+            
+            <a href="#" onclick="redirectWithDiscount()" class="cta-button">Join ProspectTrade Now</a>
+            
+            <p style="margin-top: 30px; font-size: 0.9em; color: #999;">
+                ⚠️ <strong>Risk Warning:</strong> Trading involves risk. Past performance doesn't guarantee future results. Only invest what you can afford to lose.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ProspectTrade. All rights reserved. | Empowering Nigerian Traders Since 2021</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to redirect with discount parameters and UTM tracking
+        function redirectWithDiscount() {
+            // Base URL for your main site
+            const baseUrl = 'https://prospecttrade.org';
+            
+            // UTM parameters for Google Analytics tracking
+            const utmParams = {
+                utm_source: 'preland',
+                utm_medium: 'landing_page',
+                utm_campaign: 'preland30_discount',
+                utm_content: 'cta_button',
+                utm_term: '30percent_off'
+            };
+            
+            // Discount data
+            const discountData = {
+                discount: 'PRELAND30',
+                amount: 30,
+                source: 'preland',
+                timestamp: Date.now()
+            };
+            
+            // Combine all parameters
+            const allParams = { ...utmParams, ...discountData };
+            
+            // Create URL with all parameters
+            const params = new URLSearchParams(allParams);
+            const urlWithParams = `${baseUrl}?${params.toString()}`;
+            
+            // Open in new tab
+            window.open(urlWithParams, '_blank');
+        }
+
+        // Simple animation on scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('fade-in');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
