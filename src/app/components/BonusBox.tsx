@@ -170,9 +170,7 @@ const BonusBox = () => {
           </h1>
         </div>
         
-        <p className="text-lg sm:text-xl md:text-3xl text-white font-bold mb-8 md:mb-12 px-4 sm:px-8 md:px-12 leading-relaxed">
-          Dominate the market — with analytics that actually work
-        </p>
+        
       </div>
 
       {/* New Main Content - Updated Text */}
