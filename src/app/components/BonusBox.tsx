@@ -199,7 +199,7 @@ const BonusBox = () => {
       </div>
 
       {/* Bonus Box - Made Larger */}
-      <div className="relative mb-12" data-bonus-box>
+      <div className="relative mb-2" data-bonus-box>
         <div
           onClick={handleBoxClick}
           className={`
@@ -296,20 +296,20 @@ const BonusBox = () => {
       </div>
 
       {/* Get Started Button under the box */}
-      <div className="text-center mt-6 mb-8">
+      <div className="text-center mt-2 mb-2">
         <button
           onClick={handleGetStarted}
           className="px-8 py-4 bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-xl hover:from-green-600 hover:to-teal-700 transition-all duration-200 font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
         >
           🚀 Get Started
         </button>
-        <p className="text-gray-400 text-sm mt-3 px-4">
+        <p className="text-gray-400 text-sm mt-2 px-4">
           {hasOpenedBox ? 'Ready to claim your discount!' : 'Open the bonus box to unlock your special offer!'}
         </p>
       </div>
 
       {/* Company Description Section */}
-      <div className="mt-4 md:mt-6 max-w-4xl mx-auto text-center px-4">
+      <div className="mt-2 md:mt-3 max-w-4xl mx-auto text-center px-4">
         <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/10">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6">
             Why Choose ProspectTrade?
