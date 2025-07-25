@@ -175,11 +175,31 @@ const BonusBox = () => {
         </p>
       </div>
 
-      {/* Main Content */}
-      <div className="text-center mb-8 md:mb-12 mt-32 sm:mt-36 md:mt-40 px-4">
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 font-light">
-          Click the box to open your reward!
-        </p>
+      {/* New Main Content - Updated Text */}
+      <div className="text-center mb-8 md:mb-12 mt-32 sm:mt-36 md:mt-40 px-4 max-w-4xl">
+        <div className="space-y-4 md:space-y-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight">
+            <span className="text-red-400">Tired of working overtime for peanuts?</span>
+          </h2>
+          
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
+            Still wasting money on courses that never deliver real results? <span className="text-white font-semibold">Sounds familiar?</span>
+          </p>
+          
+          <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
+            We're not here to promise you 100x gains — but we <em className="text-blue-400 font-semibold">are</em> here to offer you a real chance to earn consistently. 
+            <span className="block mt-2 text-gray-300">No hype. Just proven rules, real support, and a team that wins together.</span>
+          </p>
+          
+          <div className="pt-4 md:pt-6">
+            <p className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
+              🎁 <span className="text-yellow-400">Open your gift box and start changing your life today.</span>
+            </p>
+            <p className="text-base sm:text-lg text-blue-300 font-medium">
+              Your journey to financial freedom starts now.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Bonus Box - Made Larger */}
