@@ -187,7 +187,7 @@ const BonusBox = () => {
           </p>
           
           <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
-            We're not here to promise you 100x gains — but we <em className="text-blue-400 font-semibold">are</em> here to offer you a real chance to earn consistently. 
+            We&apos;re not here to promise you 100x gains — but we <em className="text-blue-400 font-semibold">are</em> here to offer you a real chance to earn consistently. 
             <span className="block mt-2 text-gray-300">No hype. Just proven rules, real support, and a team that wins together.</span>
           </p>
           
