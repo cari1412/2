@@ -169,12 +169,10 @@ const BonusBox = () => {
             ProspectTrade
           </h1>
         </div>
-        
-        
       </div>
 
       {/* New Main Content - Updated Text */}
-      <div className="text-center mb-8 md:mb-12 mt-32 sm:mt-36 md:mt-40 px-4 max-w-4xl">
+      <div className="text-center mb-8 md:mb-12 mt-16 sm:mt-20 md:mt-24 px-4 max-w-4xl">
         <div className="space-y-4 md:space-y-6">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight">
             <span className="text-red-400">Tired of working overtime for peanuts?</span>
