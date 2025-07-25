@@ -367,20 +367,20 @@ const BonusBox = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                M
+                R
               </div>
               <div className="ml-4">
-                <h4 className="text-white font-semibold text-lg">Michael Chen</h4>
-                <p className="text-gray-300 text-sm">Professional Trader</p>
+                <h4 className="text-white font-semibold text-lg">Rajesh Kumar</h4>
               </div>
             </div>
             <div className="flex mb-3">
-              {[...Array(5)].map((_, i) => (
+              {[...Array(4)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
               ))}
+              <Star className="w-5 h-5 text-gray-400" />
             </div>
             <p className="text-gray-200 text-sm leading-relaxed">
-              &quot;ProspectTrade&apos;s analytics have completely transformed my trading strategy. The insights are incredibly accurate and have boosted my returns by 40%.&quot;
+              &quot;Signals don&apos;t always end in profit — but the team helps by suggesting the best times to exit trades. Because of that, even a losing signal doesn&apos;t feel as painful.&quot;
             </p>
           </div>
 
@@ -388,11 +388,10 @@ const BonusBox = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                S
+                P
               </div>
               <div className="ml-4">
-                <h4 className="text-white font-semibold text-lg">Sarah Johnson</h4>
-                <p className="text-gray-300 text-sm">Investment Manager</p>
+                <h4 className="text-white font-semibold text-lg">Priya Sharma</h4>
               </div>
             </div>
             <div className="flex mb-3">
@@ -401,7 +400,7 @@ const BonusBox = () => {
               ))}
             </div>
             <p className="text-gray-200 text-sm leading-relaxed">
-              &quot;Finally, analytics that actually work! The market predictions are spot-on, and the interface is incredibly intuitive. Best investment I&apos;ve made.&quot;
+              &quot;Sometimes a signal can bring up to 20% profit. It&apos;s best to follow the team&apos;s recommendations and not use higher leverage than they suggest. But those were my own mistakes — I didn&apos;t understand it all right away.&quot;
             </p>
           </div>
 
@@ -412,17 +411,17 @@ const BonusBox = () => {
                 A
               </div>
               <div className="ml-4">
-                <h4 className="text-white font-semibold text-lg">Alex Rodriguez</h4>
-                <p className="text-gray-300 text-sm">Day Trader</p>
+                <h4 className="text-white font-semibold text-lg">Arjun Patel</h4>
               </div>
             </div>
             <div className="flex mb-3">
-              {[...Array(5)].map((_, i) => (
+              {[...Array(4)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
               ))}
+              <Star className="w-5 h-5 text-gray-400" />
             </div>
             <p className="text-gray-200 text-sm leading-relaxed">
-              &quot;I&apos;ve tried dozens of trading platforms, but ProspectTrade is in a league of its own. The real-time analytics give me the edge I need to stay profitable.&quot;
+              &quot;There was a week when things didn&apos;t go so well... but the team explained what was happening and even gave a small bonus to help us get through the drawdown more easily.&quot;
             </p>
           </div>
         </div>
@@ -437,7 +436,6 @@ const BonusBox = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-white font-semibold text-lg">Emma Thompson</h4>
-                <p className="text-gray-300 text-sm">Crypto Analyst</p>
               </div>
             </div>
             <div className="flex mb-3">
@@ -458,7 +456,6 @@ const BonusBox = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-white font-semibold text-lg">David Kim</h4>
-                <p className="text-gray-300 text-sm">Portfolio Manager</p>
               </div>
             </div>
             <div className="flex mb-3">
