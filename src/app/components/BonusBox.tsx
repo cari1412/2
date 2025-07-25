@@ -295,6 +295,19 @@ const BonusBox = () => {
         </div>
       </div>
 
+      {/* Get Started Button under the box */}
+      <div className="text-center mt-6 mb-8">
+        <button
+          onClick={handleGetStarted}
+          className="px-8 py-4 bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-xl hover:from-green-600 hover:to-teal-700 transition-all duration-200 font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          🚀 Get Started
+        </button>
+        <p className="text-gray-400 text-sm mt-3 px-4">
+          {hasOpenedBox ? 'Ready to claim your discount!' : 'Open the bonus box to unlock your special offer!'}
+        </p>
+      </div>
+
       {/* Company Description Section */}
       <div className="mt-4 md:mt-6 max-w-4xl mx-auto text-center px-4">
         <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/10">
