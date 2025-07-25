@@ -172,7 +172,7 @@ const BonusBox = () => {
       </div>
 
       {/* New Main Content - Updated Text */}
-      <div className="text-center mb-2 md:mb-3 mt-16 sm:mt-20 md:mt-24 px-4 max-w-4xl">
+      <div className="text-center mb-1 md:mb-2 mt-16 sm:mt-20 md:mt-24 px-4 max-w-4xl">
         <div className="space-y-4 md:space-y-6">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight">
             <span className="text-red-400">Tired of working overtime for peanuts?</span>
@@ -296,7 +296,7 @@ const BonusBox = () => {
       </div>
 
       {/* Company Description Section */}
-      <div className="mt-12 md:mt-16 max-w-4xl mx-auto text-center px-4">
+      <div className="mt-4 md:mt-6 max-w-4xl mx-auto text-center px-4">
         <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/10">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6">
             Why Choose ProspectTrade?
